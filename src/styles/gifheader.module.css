@@ -1,0 +1,26 @@
+.bgStyle {
+  background-image: url("https://ad-fe-web-landing-page.s3.us-east-2.amazonaws.com/bg_main_web.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.imagContentDiv {
+  padding: 5px;
+  display: flex;
+  column-gap: 1%;
+  row-gap: 1%;
+  flex-wrap: wrap;
+}
+
+.imagContentDiv1 {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    column-gap: 1%;
+    row-gap: 1%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

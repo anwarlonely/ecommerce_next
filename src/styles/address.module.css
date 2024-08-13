@@ -1,0 +1,17 @@
+.hidingBill{
+    color: rgb(34, 37, 41);
+    font-size: 16.8px;
+    font-weight: 700;
+}
+.addCommonStyle{
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: 400;
+}
+.selectBtn{
+    background-color: #F8F8F8;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    padding: 4px 15px 4px 15px;
+}

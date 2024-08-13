@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nextjs-app:
+    image: your-nextjs-image
+    ports:
+      - "80:3001"
+

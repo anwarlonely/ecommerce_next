@@ -1,0 +1,66 @@
+.adddTextStyle {
+    color: #094c89;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 4%;
+    line-height: normal;
+  }
+  .adddTextStyle1 {
+    color: #094c89;
+    display: flex;
+    justify-content: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 4%;
+    line-height: normal;
+  }
+  .styleCardAlignStyle {
+    display: flex;
+    max-height: 76vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+  }
+  
+  /* Scrollbar styles */
+  .styleCardAlignStyle::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .styleCardAlignStyle::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .styleCardAlignStyle::-webkit-scrollbar-thumb {
+    background: #0075b2;
+  }
+  
+  .styleCardAlignStyle::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1;
+  }
+  
+  .addNewCardStylePlus {
+    display: flex;
+    justify-content: center;
+    padding: 9.5%;
+  }
+  
+  
+  .addnewCardStyle {
+    height: 29.vh;
+    box-shadow: 10px 10px 24.863px 0px rgba(97, 169, 236, 0.15);
+    border: 1px solid #CED4DA;
+    width: calc(33.4% - 20px);
+    gap: 10px;
+    cursor: pointer;
+  }
+  .addnewCardStyle:hover{
+      border: 2px solid #119AD5;
+  }

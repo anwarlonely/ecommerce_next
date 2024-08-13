@@ -1,0 +1,33 @@
+.loginMainDiv{
+    display: flex;
+    gap: 5%;
+    width: 65vw;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+
+.btnLoginStyle{
+    background: black;
+    color: white;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid black;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.loginStyleText{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(34, 37, 41);
+
+}
+
+.labelStyle{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+

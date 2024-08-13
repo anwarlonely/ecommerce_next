@@ -1,0 +1,100 @@
+.loginMainDiv{
+
+ padding: 0px;
+ margin: 0px;
+  width: 65vw;
+  height: auto;
+  flex-wrap: wrap;
+
+}
+
+.loginMainDivInModel{
+
+  /* padding: 0px;
+  margin: 0px; */
+   /* width: 65vw; */
+   height: auto;
+   flex-wrap: wrap;
+ 
+ }
+
+
+
+@media (max-width: 430px) {
+  .loginMainDiv {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.register {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textHeaderStyle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .topSectionStyle {
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .fieldRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .fieldRow1 {
+    /* display: flex; */
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .fieldCol {
+    flex: 0 0 48%;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .inputFile {
+    width: 100%;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .submitButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:disabled {
+    background-color: #ccc;
+  }
+  

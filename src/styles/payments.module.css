@@ -1,0 +1,101 @@
+/* AccordionHeader.module.css */
+
+.customAccordionHeader {
+    position: relative;
+    /* padding-right: 20px; */
+  }
+  
+  .customAccordionHeader::after {
+    content: ""; /* Hide the default arrow icon */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: transparent transparent transparent transparent; /* Set all borders to transparent */
+    transform: translateY(-50%);
+    transition: border-color 0.2s; /* Add transition for a smooth effect */
+  }
+
+  .customAccordionHeader:hover::after {
+    border-color: transparent transparent transparent #333; /* Only change the top border color on hover */
+  }
+  
+  .checkboxLabel {
+    display: 'flex';
+    align-items: 'center';
+    cursor: 'pointer';
+  }
+
+  .checkboxInput {
+    margin-right: '10px';
+  }
+
+  .bottom {
+    border-bottom: none;
+  }
+  .billtext{
+    position: relative;
+    left: 10px;
+  }
+
+
+  @media screen and (max-width: 300px) {
+    .labelone {
+
+    }
+
+
+  }
+
+ 
+
+  @media screen and (max-width: 350px) {
+    .labelone {
+      width: 120px;
+    }
+
+    .payimg{
+      position: absolute;
+      left: 215px;
+      
+       /* left: "390px ", */
+    }
+
+    .paytext{
+      width: 130px;
+    }
+  }
+
+
+
+  .table {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  @media screen and (max-width: 360px) {
+    .table tbody tr {
+      display: block; 
+      margin-bottom: 10px; 
+    }
+
+    .table tbody td {
+      display: block; 
+    }
+
+    .table tbody td:last-child {
+      margin-top: 10px; 
+    }
+  }
+
+
+  @media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .payimg{
+      margin-right: 25px !important;
+      border-color: 3px solid  red !important;
+    }
+
+  }

@@ -1,0 +1,9 @@
+.MainDiv{
+    width: 65vw;
+    margin: auto;
+    display: flex;
+   
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    padding: 20px;
+}

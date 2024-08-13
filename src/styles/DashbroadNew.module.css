@@ -1,0 +1,312 @@
+.parTextStyle {
+    color: #8a8a8a;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 136.375%; /* 27.275px */
+  }
+  .parStyleName {
+    color: #094c89;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46.233px; /* 192.636% */
+  }
+  .firstDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .parStyleName1 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46.233px; /* 192.636% */
+  }
+  /* .firstDiv {
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .cardStyleimage {
+    width: 100%;
+    height: 100%;
+    border-radius: 5.772px;
+    background: var(--white, #fff);
+    border: none;
+    box-shadow: 0px 2.86px 6.334px -0.409px rgba(1, 90, 102, 0.17);
+  }
+  
+  .cardStyleimage1 {
+    width: 100%;
+    height: 90px;
+    border-radius: 5.772px;
+    background: var(--white, #fff);
+    border: none;
+    box-shadow: 0px 2.86px 6.334px -0.409px rgba(1, 90, 102, 0.17);
+  }
+  .cardStyleimage2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5.772px;
+    background: var(--white, #fff);
+    border: none;
+    box-shadow: 0px 2.86px 6.334px -0.409px rgba(1, 90, 102, 0.17);
+  }
+  
+  .cardStyleimage3 {
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 5.772px;
+    background: var(--white, #fff);
+    border: none;
+    box-shadow: 0px 2.86px 6.334px -0.409px rgba(1, 90, 102, 0.17);
+  }
+  
+  .textStyleBlue {
+    color: #094c89;
+    display: flex;
+    flex-wrap: wrap;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Roboto;
+    font-size: 17.894px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42.175px; /* 192.636% */
+  }
+  
+  .textStyleBlue1 {
+    color: #094c89;
+    margin-left: 4.5%;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Montserrat;
+    font-size: 18.811px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.632px; /* 105.195% */
+  }
+  .textName {
+    color: #8a8a8a;
+  
+    font-family: Poppins;
+    font-size: 15.237px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 136.375%; /* 9.87px */
+  }
+  
+  .commonTextStyleBlue {
+    background: var(
+      --Theme-Color-Blue-Gradient,
+      linear-gradient(180deg, #2f4c8f 0%, #2581bf 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 136.375%; /* 21.82px */
+  }
+  
+  .commonTextStyleBlue1 {
+    background: var(
+      --Theme-Color-Blue-Gradient,
+      linear-gradient(180deg, #2f4c8f 0%, #2581bf 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    
+    line-height: 136.375%; /* 21.82px */
+  }
+  
+  .spaceStyle {
+    display: flex;
+    margin-left: 4.5%;
+    flex-wrap: wrap;
+  }
+  .clickStyle {
+    cursor: pointer;
+  }
+  
+  .CommonTextStyleAcco {
+    display: flex;
+    justify-content: space-between;
+  }
+  .parStyleNameAcco {
+    color: #353535;
+    font-family: Poppins;
+    font-size: 21.129px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 136.375%; /* 24.723px */
+  }
+  .parStyleNameAcc2 {
+    color: #094c89;
+    cursor: pointer;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Roboto;
+    font-size: 18.443px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.75px; /* 192.636% */
+  }
+  
+  .SeclastRow {
+    color: #0075b2;
+    font-family: Poppins;
+    font-size: 21.798px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .timeStyle {
+    color: #9599ad;
+    font-family: Poppins;
+    font-size: 12.83px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .divContentStyle {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .timefirstStyle {
+    color: #212529;
+    font-family: Poppins;
+    font-size: 14.229px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .timefirstStyle1 {
+    color: #212529;
+    font-family: Poppins;
+    font-size: 14.229px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .outerDivColor {
+    border-radius: 3.39px;
+    border: 0.848px solid #efae05;
+    width: 108px;
+    padding: auto;
+    height: 55%;
+    flex-shrink: 0;
+    background: #ffede0;
+  }
+  
+  .textStyleColor {
+    color: #b56200;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-family: Poppins;
+    padding: 0px 0px 10px 10px;
+    font-size: 12.17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .nameStyle {
+    color: #2b61a2;
+  
+    font-family: Poppins;
+    font-size: 19.181px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .adressStyle {
+    color: #212529;
+  
+    font-family: Poppins;
+    font-size: 16.533px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .commonCardStyleInfo {
+    border: none;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comStyleText {
+    color: #8a8a8a;
+    font-family: Poppins;
+    font-size: 14.237px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 136.375%; /* 9.87px */
+  }
+  
+  .comStyleText1 {
+    color: #8a8a8a;
+    font-family: Poppins;
+    font-size: 13.237px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 136.375%; /* 9.87px */
+  }
+  
+  .successbtnSty {
+    border-radius: 4px;
+    border: none;
+    background: #0ab19a;
+  }
+  .successbtnSty:hover {
+    background: #0ab19a;
+  }
+  
+  .cardheaderStyleDas {
+    color: var(--white, #fff);
+    border-radius: 6px 6px 0px 0px;
+    background: #f3833f;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    font-size: 21.979px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.375%; /* 31.337px */
+  }
+  
+  .cardAccountDash {
+    background-color: #094c89;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .cardSpaceStyle{
+    padding: 0px;
+    border: none;
+  }
+  .navItemStyle{
+    width: 100%;
+  }
+  
+  .orderContainer {
+    overflow: hidden;
+  }
+  
+  .scrollableContainer {
+    max-height: 300px; /* Adjust the height according to your design */
+    overflow-y: auto;
+  }
+  
+  

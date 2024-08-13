@@ -1,0 +1,14 @@
+.selectBtn{
+    background-color: #F8F8F8;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    padding: 4px 10px 4px 10px;
+}
+.QuickBtn{
+    background-color: black;
+    font-size: 13px;
+    font-weight: 600;
+    color:white;
+    padding: 4px 10px 4px 10px;
+}

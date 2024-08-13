@@ -1,0 +1,39 @@
+.linkText{
+    font-size: 14px;
+    color: rgb(34, 37, 41);
+    text-decoration: none;
+    font-weight: 500;
+}
+.linkText:hover{
+    color:rgb(0, 113, 220);
+    font-weight: 600;
+}
+
+.commonPriceStyle{
+    font-size: 13.5px;
+    color:  rgb(119, 119, 119);
+    font-weight: 400;
+}
+.applyBtn{
+    background-color: #F1F1F1;
+    font-size: 14px;
+    padding: 8px;
+       font-weight: 700;
+       color:rgb(34, 37, 41);
+   
+   }
+   .emptyBtn{
+    background-color: #0064C3;
+    font-size: 14px;
+    padding: 8px;
+       font-weight: 700;
+       color:white;
+   }
+
+   .updateBtn{
+    background-color: #F1F1F1;
+    font-size: 14px;
+    padding: 8px;
+       font-weight: 700;
+       color:rgb(34, 37, 41);
+   }

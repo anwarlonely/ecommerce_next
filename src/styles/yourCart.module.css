@@ -1,0 +1,91 @@
+.leftcardHiding {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+
+  }
+
+  .cartContent{
+   max-height: 500px;
+    overflow: auto;
+    background-color: #ce2626;
+  }
+  
+  .hidingShip {
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(34, 37, 41);
+  }
+  
+  .radioBtnStyle {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgb(119, 119, 119);
+  }
+  .radioGap {
+      margin-right: 10px; /* Adjust the value as needed */
+    }
+  
+    .addressStyle {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(119, 119, 119);
+  }
+  
+  .addressStyle1 {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(119, 119, 119);
+  }
+  
+  .updateBtnStyle{
+   background-color: #F1F1F1;
+   font-size: 14px;
+   padding: 8px;
+      font-weight: 700;
+      color:rgb(34, 37, 41);
+  
+  }
+  
+  .taxStyle{
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(119, 119, 119);;
+  
+  }
+  .taxStyleH{
+    font-size: 16px;
+    font-weight: 400;
+    color: #007cbe;
+
+}
+
+
+  .taxStyleH:hover{
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  .taxStyle2{
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(34, 37, 41);
+  
+  }
+  
+  .taxStyle3{
+      font-size: 22px;
+      font-weight: 700;
+      color: rgb(34, 37, 41);
+  
+  }
+  
+  .proceedBtnStyle{
+      background-color: #FF6600;
+   font-size: 14px;
+   width: 100%;
+   align-items: center;
+   padding: 8px;
+      font-weight: 700;
+      color:white;
+  }

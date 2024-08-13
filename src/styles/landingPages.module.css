@@ -1,0 +1,78 @@
+.wrapper {
+  position: relative;
+}
+
+.titleImage {
+  position: relative;
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoImage {
+  width: 10rem;
+  height: auto;
+}
+
+@media (min-width: 769px) {
+  .logoImage {
+    width: 25rem;
+  }
+}
+
+/* .torch_container {
+    background-image: url("../../public/assets/torch/torch_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+  #show_now_button {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  #show_now_button img {
+    transition: transform 0.3s ease;
+  }
+  #show_now_button:hover {
+    transform: scale(0.9);
+  }
+  #show_now_button img:hover {
+    transform: scale(1.1);
+  }
+  .product_section {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hover_effect {
+    transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+  }
+  .hover_effect:hover {
+    transform: scale(1.1) translateY(-10px);
+    margin-top: -10px;
+  }
+  .sectionBar{
+    height: auto;
+    width: 100%;
+   
+  }
+  @media only screen and (max-width: 768px) {
+    .product_section {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .shop_now_size {
+      height: 50px !important;
+      width: 120px !important;
+    }
+  }
+  
