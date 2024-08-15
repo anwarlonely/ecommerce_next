@@ -55,7 +55,7 @@ export default function Footer() {
     <Grid
       container
       className="footer-section"
-      sx={{ backgroundColor: "gray.900", color: "white", px: 8, py: 12, backgroundImage: `url(${imageURL}/2020/12/footer-10-scaled.jpg)`, }}
+      sx={{ backgroundColor: "gray.900", color: "white", px: 8, py: 12, backgroundImage: `url("https://img.freepik.com/free-vector/golden-rakhi-raksha-bandhan-festival_1017-26410.jpg?size=626&ext=jpg&uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid")`, }}
     >
       <Grid item xs={12} md={3}>
         <Grid container direction="column" alignItems="flex-start">

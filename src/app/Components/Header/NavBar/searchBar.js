@@ -317,7 +317,7 @@ export default function SearchBar({ setSearcVal }) {
             backgroundColor : "white",
             borderRadius : "15px",
             fontSize : "1.8rem",
-            color : "#FF6600",
+            color : "",
             width : "100% ",
             padding : "2px"
           }}

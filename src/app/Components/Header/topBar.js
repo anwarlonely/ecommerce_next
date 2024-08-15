@@ -49,41 +49,18 @@ export default function TopBar({ setSearcVal, isSticky }) {
 
   return (
     <div className="header">
-      <div className="flex">
-        {token ? (
-          <div >
-            {/* <Link href={item.link} style={{ display: "block" }}> */}
-              <img
-                src={`https://ad.phantasm.solutions/wp-content/uploads/2024/08/Artboard-1.png`}
-                alt={`topbar `}
-              />
-            {/* </Link> */}
-          </div>
-        ) : (
-          topBarData?.map((item, index) => (
-            <div key={index}>
-              <Link href={item.link} style={{ display: "block" }}>
-                <img
-                  src={`${backendURL}/storage/${item.url}`}
-                  alt={`topbar ${item.serial}`}
-                />
-              </Link>
-            </div>
-          ))
-        )}
-      </div>
+
 
       <div
         className="header-message"
         style={{ background: "linear-gradient(90deg, #be0602, #021669)" }}
       >
         <p className="header-message-text text-light">
-          THIS PRODUCT CONTAINS <span>NICOTINE. </span>NICOTINE IS AN ADDICTIVE
-          CHEMICAL.
+WE ARE HERE TO SORTOUT THE COMPLEXICAL THINGS TO EASIER
         </p>
       </div>
       <NavBar setSearcVal={setSearcVal} isSticky={isSticky} />
-      <GifHeader />
+      {/* <GifHeader /> */}
     </div>
   );
 }

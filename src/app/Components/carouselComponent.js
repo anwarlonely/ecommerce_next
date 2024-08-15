@@ -6,7 +6,7 @@ import '../../styles/styles.scss';
 import Link from 'next/link';
 import Cookies from 'js-cookie';
 
-const CarouselComponent = ({ className, carouselItems = [] }) => {
+const CarouselComponent = ({ className, carouselItems, centerbanners }) => {
   const backendURL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -45,17 +45,17 @@ const CarouselComponent = ({ className, carouselItems = [] }) => {
       return <div>No data</div>;
     }
 
-    return visibleItems.map((item, index) => (
+    return centerbanners?.map((item, index) => (
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={index}
       >
-        <Link href={item.link}>
+        {/* <Link href={item.link}> */}
           <img className="d-block w-100" 
           
-          src={`${backendURL}/storage/${item.url}`} alt={`Slide ${item.serial}`} />
-        </Link>
+          src={item?.src} alt={`Slide `} />
+        {/* </Link> */}
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     ));

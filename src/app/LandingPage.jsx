@@ -363,6 +363,67 @@ export default function LandingPage() {
     return null;
   }
 
+  const centerbanners = [
+  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },
+  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },  {
+    src: "https://img.freepik.com/free-photo/raksha-bandhan-rakhi-with-red-ribbon-black-background_1057-35740.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+  },
+  
+  ]
+
+  const leftbanners = [
+    {
+      src: "https://img.freepik.com/free-photo/gold-necklace-with-beaded-design-word-love-it_1340-42857.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+    },
+    {
+      src: "https://img.freepik.com/free-photo/beautiful-engagement-ring-with-diamonds_23-2149509253.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+    }
+  ]
+
+  const categories = [
+    {
+      src: 'https://img.freepik.com/premium-photo/macro-photograph-brazilian-flag-lapel-background_1270829-62351.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },
+    {
+      src: 'https://img.freepik.com/premium-photo/necklace-with-emeralds-diamonds-it_1217673-64820.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },    {
+      src: 'https://img.freepik.com/free-photo/view-luxurious-golden-ring-rock-concrete-tray_23-2150329672.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },    {
+      src: 'https://img.freepik.com/premium-photo/gorgeous-gold-wedding-jewellery_1261241-292.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },    {
+      src: 'https://img.freepik.com/premium-photo/gold-silver-bowl-with-design-bottom_984237-22653.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },
+  ]
+
+  const verticals = [
+    {
+      src: 'https://img.freepik.com/free-photo/view-luxurious-golden-ring-felt-jewelry-display_23-2150329654.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid'
+    },
+    {src:"https://img.freepik.com/free-photo/vertical-shot-necklace-with-skull-like-charm-white-background_181624-6662.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"},
+    {
+      src: "https://img.freepik.com/free-photo/view-luxurious-golden-ring-rock-concrete-tray_23-2150329672.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+    },
+    {
+      src: "https://img.freepik.com/free-photo/view-luxurious-golden-ring-felt-jewelry-display_23-2150329659.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+    },
+    {
+      src: "https://img.freepik.com/free-photo/view-luxurious-golden-ring-with-transparent-glass_23-2150329681.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"
+    },
+    {src:"https://img.freepik.com/premium-photo/beautiful-luxury-tika-indian-traditional-jewellery_136354-257.jpg?uid=R130662668&ga=GA1.1.879963642.1723735612&semt=ais_hybrid"}
+  ]
+
   return (
     <Container className="container">
       <TopBar isSticky={isSticky} />
@@ -372,31 +433,32 @@ export default function LandingPage() {
           flexDirection: "row",
         }}
       >
-        <SideNav />
+        {/* <SideNav /> */}
         <Box
           sx={{
             flexGrow: 1,
-            padding: "20px",
+            padding: "40px",
             // marginLeft: isFixed ? "17rem" : "0"
           }}
         >
           <div className={style.mainContainerStyle}>
+            {/* left gif section */}
             <div className={style.leftNewStyle}>
-              {card?.slice(0, 2)?.map((item, index) => (
+              {leftbanners?.slice(0, 2)?.map((item, index) => (
                 <div
                   key={index}
                   className="mt-2"
                   style={{ display: "inline-block", width: "100%" }}
                   id={item.position}
                 >
-                  <Link href={item.link} style={{ display: "block" }}>
+                  {/* <Link href={item.link} style={{ display: "block" }}> */}
                     <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item.serial}`}
+                      src={item?.src}
+                      alt={`Card`}
                       className="gifs1 rounded-xl"
                       style={{ width: "100%", display: "block" }}
                     />
-                  </Link>
+                  {/* </Link> */}
                 </div>
               ))}
             </div>
@@ -407,23 +469,10 @@ export default function LandingPage() {
                 apiEndpoint="slider"
                 id="slider"
                 carouselItems={carouselItems1}
+                centerbanners={centerbanners}
               />
             </div>
-            <div className={style.rightNewStyle}>
-              {" "}
-              {card?.slice(2)?.map((item, index) => (
-                <div key={index} className="mt-2 mb-2">
-                  <Link href={item.link}>
-                    <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item.serial}`}
-                      className="gifs1 rounded-xl"
-                      style={{ width: "100%", display: "block" }}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </div>
+
           </div>
 
           <div className="py-1">
@@ -473,35 +522,35 @@ export default function LandingPage() {
           )} */}
           {token ? (
             <div className={style.categSectionStyle}>
-              {brandcards1?.slice(0, 10).map((item, index) => (
-                <div key={index} id={item.position}>
-                  <Link href={item?.link}>
+              {categories?.slice(0, 10).map((item, index) => (
+                <div key={index} >
+                  {/* <Link href={item?.link}> */}
                     <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item?.serial}`}
+                      src={item?.src}
+                      alt={`Card `}
                       className="home-page-brands"
                     />
-                  </Link>
+                  {/* </Link> */}
                 </div>
               ))}
             </div>
           ) : (
             <div className="flex flex-row py-3 px-4">
-              {brandcards1?.slice(0, 10).map((item, index) => (
+              {categories?.slice(0, 10).map((item, index) => (
                 <div key={index}>
-                  <Link href={item.link}>
+                  {/* <Link href={item.link}> */}
                     <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item.serial}`}
+                      src={item?.src}
+                      alt={`Card `}
                       className="home-page-brands"
                     />
-                  </Link>
+                  {/* </Link> */}
                 </div>
               ))}
             </div>
           )}
 
-          <div className="py-4">
+          {/* <div className="py-4">
             {banner2?.map((item, index) => (
               <div key={index} id={item.position}>
                 <Link href={item?.link}>
@@ -513,8 +562,8 @@ export default function LandingPage() {
                 </Link>
               </div>
             ))}
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             {banner3?.map((item, index) => (
               <div key={index} className="w-full" id={item.position}>
                 <Link href={item?.link}>
@@ -526,7 +575,7 @@ export default function LandingPage() {
                 </Link>
               </div>
             ))}
-          </div>
+          </div> */}
           {banner4 && (
             <div className="pb-2 pt-0">
               {banner4.map((item, index) => (
@@ -556,19 +605,7 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
-          <div className={style.categSectionStyle1}>
-            {brandcards2?.slice(0, 10).map((item, index) => (
-              <div key={index} id={item.position}>
-                <Link href={item.link}>
-                  <img
-                    src={`${backendURL}/storage/${item.url}`}
-                    alt={`Card ${item.serial}`}
-                    className="home-page-brands"
-                  />
-                </Link>
-              </div>
-            ))}
-          </div>
+
           {/* <div className="p-1">
             {banner6?.map((item, index) => (
               <div key={index}>
@@ -636,7 +673,7 @@ export default function LandingPage() {
             <h1 className="text-center font-bold text-2xl text-orange-500">
               Latest New Arrivals
             </h1>
-            <div className="arrowIcons">
+            {/* <div className="arrowIcons">
               <IconButton
                 onClick={() =>
                   handlePrevClick(
@@ -680,7 +717,7 @@ export default function LandingPage() {
               >
                 View All New Arrival Products
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="py-8">
             {banner7.map((item, index) => (
@@ -821,115 +858,19 @@ export default function LandingPage() {
           </div>
 
           <div className={style.categSectionStyle2}>
-            {brandcards3.slice(0, 10).map((item, index) => (
-              <div key={index} id={item.position}>
-                <Link href={item.link}>
+            {verticals.slice(0, 10).map((item, index) => (
+              <div key={index} >
+                {/* <Link href={item.link}> */}
                   <img
-                    src={`${backendURL}/storage/${item.url}`}
-                    alt={`Card ${item.serial}`}
+                    src={item?.src}
+                    alt={`Card `}
                     className="home-page-brands"
                   />
-                </Link>
+                {/* </Link> */}
               </div>
             ))}
           </div>
-          <div className="py-8">
-            {banner10.map((item, index) => (
-              <div key={index} id={item.position}>
-                <Link href={item.link}>
-                  <img
-                    src={`${backendURL}/storage/${item.url}`}
-                    alt={`Card ${item.serial}`}
-                    className="w-full"
-                  />
-                </Link>
-              </div>
-            ))}
-          </div>
-          {token ? (
-            <div className="home-container p-1 mb-12" id="products5">
-              <div className="arrowIcons">
-                <IconButton
-                  onClick={() =>
-                    handlePrevClick(
-                      setCurrentIndexCategory5,
-                      currentIndexCategory5
-                    )
-                  }
-                  disabled={currentIndexCategory5 === 0}
-                  className="arrowIcon"
-                >
-                  <ArrowBackIosIcon className="buttonIcon1" />
-                </IconButton>
-                <IconButton
-                  onClick={() =>
-                    handleNextClick(
-                      setCurrentIndexCategory5,
-                      currentIndexCategory5,
-                      categoryResponse5.data?.data || []
-                    )
-                  }
-                  disabled={
-                    currentIndexCategory5 >=
-                    (categoryResponse5.data?.data?.length || 0) - itemsToShow
-                  }
-                  className="arrowIcon"
-                >
-                  <ArrowForwardIosIcon className="buttonIcon2" />
-                </IconButton>
-              </div>
-              <HomeCardsContainer
-                startIndex={currentIndexCategory5}
-                count={itemsToShow}
-                data={categoryResponse5.data?.data}
-              />
-              <div className="mt-12 text-center">
-                <Link
-                  href={`/product-category/${
-                    category5?.replace(/\s+/g, "-").toLowerCase() || ""
-                  }?perPage=${showBy}&sort=latest`}
-                  className="cursor-pointer rounded-md bg-red-500 p-4 font-bold text-white no-underline whitespace-normal"
-                >
-                  View All{" "}
-                  {category5 ? category5.replace(/-/g, " ").toUpperCase() : ""}{" "}
-                  Products
-                </Link>
-              </div>
-            </div>
-          ) : null}
-          <div className={style.mainContainerStyle1}>
-            <div className={style.leftNewStyle1}>
-              {card2.slice(0, 1).map((item, index) => (
-                <div key={index} id={item.position}>
-                  <Link href={item.link}>
-                    <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item.serial}`}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </div>
-            <div className={style.centerNewStyle1}>
-              <CarouselComponent2
-                apiEndpoint="slider"
-                carouselItems={carouselItems2}
-                id="slider2"
-              />
-            </div>
-            <div className={style.rightNewStyle1}>
-              {card2.slice(1).map((item, index) => (
-                <div key={index}>
-                  <Link href={item.link}>
-                    <img
-                      src={`${backendURL}/storage/${item.url}`}
-                      alt={`Card ${item.serial}`}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
+
           {/* <div >
              
           </div> */}

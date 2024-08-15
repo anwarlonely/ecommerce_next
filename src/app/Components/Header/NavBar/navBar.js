@@ -14,12 +14,11 @@ import Cookies from "js-cookie";
 import {
   useGetLogoDataQuery,
   useGetVerifyAgeModalDataQuery,
-  useGetWishlistDataMutation
+  useGetWishlistDataMutation,
 } from "@/redux/features/product/productApi";
 import { useSelector } from "react-redux";
 import { set_wishlistdata } from "@/redux/features/product/productSlice";
 import { useDispatch } from "react-redux";
-
 
 export default function NavBar({ setSearcVal, isSticky }) {
   const dispatch = useDispatch();
@@ -41,31 +40,23 @@ export default function NavBar({ setSearcVal, isSticky }) {
   const [backgroundImage, setBackgroundImage] = useState(
     `${imageURL}/2024/04/Pop_Up_-01-min-scaled-1.jpg`
   );
-  
 
-  const storeWishListData = useSelector((store) => store?.product?.wishlist_data);
-  
+  const storeWishListData = useSelector(
+    (store) => store?.product?.wishlist_data
+  );
 
-
- 
-
-  
-  
   const [wishListResponse, {}] = useGetWishlistDataMutation();
 
-  useEffect(()=>{
-    
+  useEffect(() => {
     wishListResponse().then((res) => {
       if (res?.data?.length > 0) {
-      dispatch(set_wishlistdata(res.data));
-       console.log("res", res?.data?.length);
-      
+        dispatch(set_wishlistdata(res.data));
+        console.log("res", res?.data?.length);
       } else {
-       console.log("error");
-       
+        console.log("error");
       }
     });
-  },[])
+  }, []);
 
   useEffect(() => {
     const updateBackgroundImage = () => {
@@ -185,71 +176,31 @@ export default function NavBar({ setSearcVal, isSticky }) {
     setOpenLogout(false);
   };
 
-
-
   return (
     <div
-      className={`navbar-section flex flex-row items-center justify-between  ${isSticky && "fixed-top"} job-navbar + ${isSticky}`}
+      className={`navbar-section flex flex-row items-center justify-between  ${
+        isSticky && "fixed-top"
+      } job-navbar + ${isSticky}`}
       style={{
-        backgroundImage: `url(${imageURL}/2020/12/Header-82.png)`,
-    transition: "background-color 0.3s ease",
-    position: isSticky ? 'fixed' : 'relative',
-    top: isSticky ? '0' : 'auto',
-    left: isSticky ? '0' : 'auto',
-    right: isSticky ? '0' : 'auto',
-    width: '100%',
-  }}
-     
+        backgroundImage: `url("https://img.freepik.com/free-vector/merry-chrsitmas-snowflake-decorative-banner-with-text-space_1017-41122.jpg?size=626&ext=jpg&ga=GA1.1.879963642.1723735612&semt=ais_hybrid")`,
+        backgroundSize:'cover',
+        backgroundPosition:'center',
+        backgroundRepeat:'no-repeat',
+        objectFit: 'contain',
+        height:'20vh',
+        width:'auto'
+      }}
     >
-      {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div
-            className="absolute inset-0 cursor-wait age-modal-bg"
-            style={{
-              backgroundImage: `url(${imageURL}/2024/04/Pop_Up_-01-min-scaled-1.jpg)`,
-            }}
-          ></div>
-          {verifyAgeModalData?.map((item, index) => (
-            <div
-              className="age-modal relative bg-white z-10 rounded-lg shadow-lg w-11/12 sm:w-96 p-6 m-4"
-              key={index}
-              style={{ backgroundImage: `url(${backgroundImage})` }}
-            >
-              <Link href={item.link}>
-                <img
-                  src={`${backendURL}/storage/${item.url}`}
-                  alt="age-modal-gif"
-                  className="w-full h-auto object-cover rounded-t-lg age-modal-gif"
-                />
-              </Link>
-              <div className="flex flex-col sm:flex-row gap-6 mt-4 buttons">
-                <button
-                  className="yes-button w-full sm:w-auto"
-                  onClick={toggleAgeModal}
-                >
-                  YES
-                </button>
-                <Link
-                  href="https://www.google.com/search?q=american+distributors+llc&sca_esv=32726a2924a7740e&sxsrf=ADLYWIKu_YYEQoKlji6JueUrH0jwXMdS_A%3A1720247267664&source=hp&ei=4-OIZuXcJqSnseMP58qvuA4&iflsig=AL9hbdgAAAAAZojx8zEOZAlp8D7gJX3DnbAGWtGUvzEo&gs_ssp=eJwFwUsKgCAUAEDaBh2gnZvW-vDvEbqF3xDMQA2k0zezbvjCAImOz-tayWIOMpUiydGQQOsQA2hDpmA8MieoFABWcjh3e8eWva0o5D5adu94Wkel-B_A3xkT&oq=american+dis&gs_lp=Egdnd3Mtd2l6IgxhbWVyaWNhbiBkaXMqAggAMgsQLhiABBjHARivATIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARivATIFEAAYgAQyBRAuGIAEMgUQABiABEjYPlCNA1j6KnABeACQAQKYAbIGoAHyIKoBDTAuMi4yLjMuMi4xLjG4AQHIAQD4AQGYAgqgArcXqAIKwgIHECMYJxjqAsICEBAAGAMY5QIY6gIYjAMYjwHCAhAQLhgDGOUCGOoCGIwDGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QABiABBixAxiDARiKBcICCxAuGIAEGNEDGMcBwgILEAAYgAQYsQMYgwHCAggQLhiABBixA8ICExAuGIAEGLEDGNEDGIMBGMcBGArCAg4QLhiABBixAxiDARjUAsICCxAAGIAEGLEDGIoFwgIOEC4YgAQYsQMY0QMYxwGYAwaSBwsxLjIuMi4zLjEuMaAHzKUB&sclient=gws-wiz"
-                  className="no-button w-full sm:w-auto text-center"
-                >
-                  NO
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
       {logoData?.length > 0 ? (
         <div>
           {logoData?.map((item, index) => (
             <div key={index}>
               <Link href={item.link}>
                 <img
-                  src={`${backendURL}/storage/${item.url}`}
+                  src={`https://i.ibb.co/KX9D8Gd/image.png`}
                   alt="logo"
                   className="logo"
-                  style={{ marginLeft: "-16%" }}
+                  style={{ height:'10vh', borderRadius:'10px' }}
                 />
               </Link>
             </div>
@@ -306,17 +257,23 @@ export default function NavBar({ setSearcVal, isSticky }) {
             </div>
           </div>
         )}
-        <Link href={`/wishlist`} className="flex flex-row gap-2 no-underline relative">
+        <Link
+          href={`/wishlist`}
+          className="flex flex-row gap-2 no-underline relative"
+        >
           <div className="relative">
             <FavoriteBorderIcon
               style={{ color: "white", fontSize: "2.4rem" }}
               className="icons"
             />
-            { (
-              <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-white text-xs rounded-full px-1.5 py-0.5" style={{backgroundColor: 'rgb(255, 109, 34)'}}>
+            {
+              <span
+                className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-white text-xs rounded-full px-1.5 py-0.5"
+                style={{ backgroundColor: "rgb(255, 109, 34)" }}
+              >
                 {storeWishListData.length || 0}
               </span>
-            )}
+            }
           </div>
           <div className="flex flex-col text-left ml-2">
             <span className="text-xs text-white span-text">Favorites</span>
